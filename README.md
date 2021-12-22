@@ -1,1 +1,1 @@
-# events-and-logging-solidity
+# Events and logging in solidity
