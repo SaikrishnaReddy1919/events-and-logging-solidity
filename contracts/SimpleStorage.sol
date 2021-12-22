@@ -1,4 +1,4 @@
-pragma solidity ^0.8.7;
+pragma solidity ^0.7.3;
 
 contract SimpleStorage {
     uint256 favNumber;
@@ -7,13 +7,13 @@ contract SimpleStorage {
         uint256 indexed newNumber,
         uint256 addedNumber,
         address sender
-    )
+    );
 
     function store(uint256 newFavNumber) public {
         emit storedNumber(
             favNumber,
             newFavNumber,
-            favNumber + newFavnumber,
+            favNumber + newFavNumber,
             msg.sender
         );
         favNumber = newFavNumber;
