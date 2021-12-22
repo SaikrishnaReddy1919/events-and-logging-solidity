@@ -8,6 +8,9 @@ async function main() {
   const simpleStorage = await SimpleStorage.deploy();
 
   await simpleStorage.deployed();
+
+  //   log contract address
+  console.log(simpleStorage.address);
   const txnResponse = await simpleStorage.store(1);
   const txnReceipt = await txnResponse.wait();
 
